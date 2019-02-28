@@ -71,7 +71,8 @@ func (s *testScheduleSuite) TestAPI(c *C) {
 			createdName: "evict-leader-scheduler-1",
 			args:        []arg{{"store_id", 1}},
 		},
-	}
+        { name:"random-merge-scheduler"},
+    }
 	for _, ca := range cases {
 		input := make(map[string]interface{})
 		input["name"] = ca.name
